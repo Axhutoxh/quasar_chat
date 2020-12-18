@@ -2,14 +2,14 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
 
-var firebaseConfig = {
-  apiKey: "AIzaSyCqFUI0NcNok0stRBxGUG8dorzpXn5qE5M",
-  authDomain: "quasar-chat-ab978.firebaseapp.com",
-  projectId: "quasar-chat-ab978",
-  storageBucket: "quasar-chat-ab978.appspot.com",
-  messagingSenderId: "854060207160",
-  appId: "1:854060207160:web:e89d88d521c4025b86aacd",
-  measurementId: "G-0Y8YX4T5PB"
+const firebaseConfig = {
+  apiKey: "AIzaSyDfeUzqYZrKSsS-S4yj01C2QMTjR_2ZjnI",
+  authDomain: "quasar-chat-7fa31.firebaseapp.com",
+  projectId: "quasar-chat-7fa31",
+  storageBucket: "quasar-chat-7fa31.appspot.com",
+  messagingSenderId: "765859706482",
+  appId: "1:765859706482:web:50c705f3be7b13bb9bf4eb",
+  measurementId: "G-ZGH19QHTHQ"
 };
 // // Initialize Firebase
 let firebaseApp = firebase.initializeApp(firebaseConfig);

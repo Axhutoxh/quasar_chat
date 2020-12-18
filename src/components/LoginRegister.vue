@@ -35,23 +35,26 @@
 
 </template>
 <script>
+import {mapActions} from 'vuex'
 export default {
     props:['tab'],
     data() {
         return {
             fromData:{
                 name:'',
-                email:'',
-                password:''
+                email:'test@a.com',
+                password:'123321'
             }
         }
     },
     methods:{
+        ...mapActions('store',['registerUser','loginUser']),
         submitForm(){
             if(this.tab=='Login'){
-                console.log("logging the user")
+                this.loginUser(this.fromData)
             }else{
                 console.log("Register the")
+                this.registerUser(this.fromData)
             }
         }
     }
